@@ -1,0 +1,14 @@
+FROM golang:latest
+
+WORKDIR /app
+
+COPY . .
+
+RUN go build -o main .
+
+EXPOSE 8080
+
+CMD ["./main"]
+
+# docker build -t basic_go_app .
+# docker run -p 8080:8080 --name go_server basic_go_app

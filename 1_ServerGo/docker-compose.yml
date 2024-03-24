@@ -1,0 +1,6 @@
+services:
+  img:
+    build: .
+    ports:
+      - 8080:8080
+    container_name: go_server_app_1
