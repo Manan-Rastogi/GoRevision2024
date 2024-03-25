@@ -22,7 +22,7 @@ jobs:
         go-version: '1.20'
 
     - name: Build
-      run: go build -v ./.../1_ServerGo/
+      run: go build -v go build ./../../1_ServerGo/*.go
 
     # - name: Test
     #   run: go test -v ./...
